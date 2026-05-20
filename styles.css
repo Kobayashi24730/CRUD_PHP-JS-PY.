@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#form input[type="text"],
+#form input:not([type="hidden"]),
+#form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+#form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+#form input:focus,
+#form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+#form button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#form button:hover {
+    background-color: #27ae60;
+}
+
+#form button:active {
+    transform: scale(0.98);
+}
+
+#lista {
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#lista li {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    border-left: 4px solid #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 0.3s ease-in;
+}
+
+#lista li .item-content {
+    flex: 1;
+}
+
+#lista li h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+#lista li p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+#lista .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#lista .btn-edit,
+#lista .btn-delete {
+    padding: 0.4rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+#lista .btn-edit {
+    background-color: #f39c12;
+    color: white;
+}
+
+#lista .btn-edit:hover {
+    background-color: #d35400;
+}
+
+#lista .btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#lista .btn-delete:hover {
+    background-color: #c0392b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
