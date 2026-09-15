@@ -33,3 +33,10 @@ python3 cliente.py
 | POST   | /api.php                  | `{"nome":"x","descricao":"y"}` |
 | PUT    | /api.php?id=1             | `{"nome":"x","descricao":"y"}` |
 | DELETE | /api.php?id=1             | —                              |
+
+
+---
+
+## Licença
+
+**Distribuído sob a licença MIT. Veja o arquivo LICENSE para o texto completo.**
